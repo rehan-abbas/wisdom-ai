@@ -25,35 +25,32 @@ const tools = [
   {
     label: "conversation",
     icon: MessageSquare,
-    color: "text-vilot-500",
-    bgcolor: "bg-violet-500/10",
+    color: "text-nuetral-200",
+    bgcolor: "bg-nuetral-900",
   },
   {
     label: "Music Generation",
     icon: Music,
-
-    color: "text-emerald-500",
-    bgcolor: "bg-violet-500/10",
+    color: "text-nuetral-200",
+    bgcolor: "bg-nuetral-900",
   },
   {
     label: "Image Generation",
     icon: ImageIcon,
-
-    color: "text-pink-700",
-    bgcolor: "bg-pink-700/10",
+    color: "text-nuetral-200",
+    bgcolor: "bg-nuetral-900",
   },
   {
     label: "Video Genneration",
     icon: VideoIcon,
-
-    color: "text-orange-700",
-    bgcolor: "text-orange-700/10",
+    color: "text-nuetral-200",
+    bgcolor: "text-onuetral-900",
   },
   {
     label: "Code Generation",
     icon: Code,
-    color: "text-green-700",
-    bgcolor: "text-green-700/10",
+    color: "text-nuetral-200",
+    bgcolor: "text-nuetral-900",
   },
 ];
 

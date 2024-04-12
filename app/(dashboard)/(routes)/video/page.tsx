@@ -59,8 +59,8 @@ const VideoPage = () => {
         title="Video Generation"
         description="Turn your prompt into video."
         icon={FileAudio}
-        iconColor="text-orange-700"
-        bgColor="bg-orange-700/10"
+        iconColor="text-neutral-200"
+        bgColor="bg-neutral-900"
       />
       <div className="px-4 lg:px-8">
         <Form {...form}>
@@ -87,7 +87,7 @@ const VideoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="Clown fish swimming in a coral reef"
+                      placeholder="What would you like to create a video about?"
                       {...field}
                     />
                   </FormControl>
@@ -95,7 +95,7 @@ const VideoPage = () => {
               )}
             />
             <Button
-              className="col-span-12 lg:col-span-2 w-full"
+              className=" bg-gradient-to-r from-cyan-500 to-blue-500 col-span-12 lg:col-span-2 w-full"
               type="submit"
               disabled={isLoading}
               size="icon"

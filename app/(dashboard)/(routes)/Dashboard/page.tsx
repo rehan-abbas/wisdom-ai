@@ -17,37 +17,33 @@ const tools = [
   {
     label: "conversation",
     icon: MessageSquare,
-    color: "text-vilot-500",
-    bgcolor: "bg-violet-500/10",
+    color: "text-neutral-900",
+
     href: "/conversation",
   },
   {
     label: "Music Generation",
     icon: Music,
     href: "/music",
-    color: "text-emerald-500",
-    bgcolor: "bg-violet-500/10",
+    color: "text-neutral-900",
   },
   {
     label: "Image Generation",
     icon: ImageIcon,
     href: "/image",
-    color: "text-pink-700",
-    bgcolor: "bg-pink-700/10",
+    color: "text-neutral-900",
   },
   {
     label: "Video Genneration",
     icon: VideoIcon,
     href: "/video",
-    color: "text-orange-700",
-    bgcolor: "text-orange-700/10",
+    color: "text-neutral-900",
   },
   {
     label: "Code Generation",
     icon: Code,
     href: "/code",
-    color: "text-green-700",
-    bgcolor: "text-green-700/10",
+    color: "text-neutral-900",
   },
 ];
 
@@ -71,7 +67,7 @@ const DashboardPage = () => {
             className="p-4 border-black/5 flex items-center justify-between hover:shadow-md transition cursor-pointer"
           >
             <div className="flex items-center gap-x-4">
-              <div className={cn("p-2 w-fit rounded-md", tools.bgcolor)}>
+              <div className={cn("p-2 w-fit rounded-md")}>
                 <tools.icon className={cn("w-8 h-8", tools.color)} />
               </div>
               <div className="font-semibold">{tools.label}</div>

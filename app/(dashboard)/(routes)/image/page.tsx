@@ -72,8 +72,8 @@ const ImagePage = () => {
         title="Image Generation"
         description="Turn your prompt into an image. "
         icon={ImageIcon}
-        iconColor="pink-violet-700"
-        bgColor="bg-pink-700/10"
+        iconColor="text-neutral-200"
+        bgColor="bg-neutral-900"
       />
       <div className="px-4 lg:px-8">
         <div>
@@ -101,7 +101,7 @@ const ImagePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="A picture of a horse in swiss alps"
+                        placeholder="Describe your desired image..."
                         {...field}
                       />
                     </FormControl>
@@ -161,7 +161,7 @@ const ImagePage = () => {
                 )}
               />
               <Button
-                className="col-span-12 lg:col-span-2 w-full"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 col-span-12 lg:col-span-2 w-full"
                 type="submit"
                 disabled={isLoading}
                 size="icon"

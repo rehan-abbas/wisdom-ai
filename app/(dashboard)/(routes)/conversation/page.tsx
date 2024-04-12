@@ -69,8 +69,8 @@ const ConversationPage = () => {
         title="Conversation"
         description="Our most advanced conversation model."
         icon={MessageSquare}
-        iconColor="text-violet-500"
-        bgColor="bg-violet-500/10"
+        iconColor="text-nuetral-200"
+        bgColor="bg-nuetral-900"
       />
       <div className="px-4 lg:px-8">
         <div>
@@ -98,7 +98,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Type your message"
+                        placeholder="What can i help your with?"
                         {...field}
                       />
                     </FormControl>
@@ -106,7 +106,7 @@ const ConversationPage = () => {
                 )}
               />
               <Button
-                className="col-span-12 lg:col-span-2 w-full"
+                className=" bg-gradient-to-r from-cyan-500 to-blue-500 col-span-12 lg:col-span-2 w-full"
                 type="submit"
                 disabled={isLoading}
                 size="icon"

@@ -59,8 +59,8 @@ const MusicPage = () => {
         title="Music Generation"
         description="Turn your prompt into music."
         icon={Music}
-        iconColor="text-emerald-500"
-        bgColor="bg-emerald-500/10"
+        iconColor="text-nuetral-200"
+        bgColor="bg-nuetral-900"
       />
       <div className="px-4 lg:px-8">
         <Form {...form}>
@@ -87,7 +87,7 @@ const MusicPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="Piano solo"
+                      placeholder="Enter the type of music you want"
                       {...field}
                     />
                   </FormControl>
@@ -95,7 +95,7 @@ const MusicPage = () => {
               )}
             />
             <Button
-              className="col-span-12 lg:col-span-2 w-full"
+              className=" bg-gradient-to-r from-cyan-500 to-blue-500 col-span-12 lg:col-span-2 w-full"
               type="submit"
               disabled={isLoading}
               size="icon"

@@ -20,6 +20,7 @@ import { cn } from "@/lib/utils";
 import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
 import { Empty } from "@/components/empty";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 import { useProModel } from "@/hooks/use-pro-model";
 
@@ -68,8 +69,8 @@ const CodePage = () => {
         title="Code Generation"
         description="Generate code using descriptive text."
         icon={Code}
-        iconColor="text-green-700"
-        bgColor="bg-green-700/10"
+        iconColor="text-nuetral-200"
+        bgColor="bg-nuetral-900"
       />
       <div className="px-4 lg:px-8">
         <div>
@@ -97,7 +98,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Simple toggle button using react hooks."
+                        placeholder="Enter a prompt here."
                         {...field}
                       />
                     </FormControl>
@@ -105,7 +106,7 @@ const CodePage = () => {
                 )}
               />
               <Button
-                className="col-span-12 lg:col-span-2 w-full"
+                className=" bg-gradient-to-r from-cyan-500 to-blue-500 col-span-12 lg:col-span-2 w-full"
                 type="submit"
                 disabled={isLoading}
                 size="icon"
